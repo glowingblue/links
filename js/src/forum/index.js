@@ -6,6 +6,10 @@ import LinkItem from './components/LinkItem';
 import LinkDropdown from './components/LinkDropdown';
 import sortLinks from '../common/utils/sortLinks';
 
+export * from './components';
+export * from '../common/utils';
+export * from '../common/models';
+
 app.initializers.add('fof-links', () => {
     app.store.models.links = Link;
 
